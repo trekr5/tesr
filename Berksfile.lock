@@ -1,0 +1,34 @@
+DEPENDENCIES
+  chocolatey
+    git: https://github.com/chocolatey/chocolatey-cookbook.git
+    revision: 9caa91d94644359959d18e14d71574bace9e71ee
+    ref: 9caa91d
+  http_deploy (~> 0.0.2)
+  minitest-handler
+  tesr
+    path: .
+    metadata: true
+
+GRAPH
+  chef_handler (1.1.6)
+  chocolatey (0.1.1)
+    powershell (>= 0.0.0)
+  http_deploy (0.0.2)
+  minitest-handler (1.3.2)
+    chef_handler (>= 0.0.0)
+  ms_dotnet2 (1.0.0)
+    windows (>= 0.0.0)
+  ms_dotnet4 (1.0.2)
+    windows (>= 0.0.0)
+  ms_dotnet45 (1.1.2)
+    windows (>= 0.0.0)
+  powershell (3.0.7)
+    ms_dotnet2 (>= 0.0.0)
+    ms_dotnet4 (>= 0.0.0)
+    ms_dotnet45 (>= 0.0.0)
+    windows (>= 1.2.8)
+  tesr (0.0.0)
+    chocolatey (>= 0.0.0)
+    http_deploy (>= 0.0.0)
+  windows (1.34.8)
+    chef_handler (>= 0.0.0)

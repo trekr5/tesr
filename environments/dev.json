@@ -1,0 +1,15 @@
+{
+  "name": "dev",
+  "description": "dev",
+  "cookbook_versions": {
+  },
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {    
+     "gg-service-ask  ": {
+		"port":"8080"
+     }
+  },
+  "override_attributes": {
+  }
+}
