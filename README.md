@@ -1,5 +1,5 @@
 tesr Cookbook
 =============
-TODO: Deploys a gem from artifactory to a VM
+TODO: Deploys a ruby gem from artifactory to a VM
 
 
