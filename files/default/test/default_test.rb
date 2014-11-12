@@ -16,5 +16,7 @@ describe_recipe 'default::test' do
   	refute File.exist?('/gginfrausermanager-1.0.130.gem')
   end	
 
+  	
+
 
  end 
