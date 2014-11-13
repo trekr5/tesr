@@ -9,7 +9,7 @@ describe_recipe 'default::test' do
   include MiniTest::Chef::Resources
 
  it "checks if a file exists" do
-  	assert File.exist?('/gginfrausermanager-1.0.120.gem')
+  	assert File.exist?('/gginfrausermanager-1.0.121.gem')
   end
 
   it "checks if a file exists" do

@@ -12,9 +12,12 @@ end
 #}
 
 
-http_deploy "gginfrausermanager-1.0.120.gem" do
+http_deploy "retrieve latest gem" do
 
-	url "http://nuget.prod.justgiving.service/artifactory/simple/int-gem/gems/gginfrausermanager-1.0.120.gem"
+	dir = "http://nuget.prod.justgiving.service/artifactory/simple/int-gem/gems/"
+	
+
+	url "#{dir}.Dir.glob("*.gem").max_by {|f| File.mtime(f)}"
 	path "/"
 	
 end
