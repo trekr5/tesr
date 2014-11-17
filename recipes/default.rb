@@ -1,4 +1,5 @@
 
+include_recipe "tesr::install"
 #value = 
 #lower = 
 #Chef::Log.info "name of the node is #{node["hostname"]} set by ohai "
@@ -7,17 +8,49 @@
 #include_recipe "tesr::install"
 
 
-execute "vagrant" do
-	command "vagrant up --provision"
+#execute "vagrant" do
+	#command "vagrant up --provision"
 
-end	
-
-
+#end
 
 
+#Chef::Log.info "#{node["name"]}"
+
+#{}"#{node["name"]}"
+#template "/tmp/angela.erb" do
+#	source "config.erb"
+	#action :create
+#	variables({
+#		:x_men => "are keen"
+#		})
+	
+
+#end	
+http_deploy "gginfrausermanager-1.0.149" do
+
+	url "http://nuget.prod.justgiving.service/artifactory/simple/int-gem/gems"
+	
+    path node[:tesr][:rubygem_host]
+    #url "#{dir}.Dir.glob("gginfrausermanager-*.gem").max_by {|f| File.mtime(f)}"
+	path "/"
+	
+end
 
 
-#chocolatey "sublimetext2" do 
+
+
+
+
+
+#chocolatey "sublimetext2" do http_deploy "gginfrausermanager-1.0.149" do
+
+	url "http://nuget.prod.justgiving.service/artifactory/simple/int-gem/gems"
+	
+    path node[:tesr][:rubygem_host]
+    #url "#{dir}.Dir.glob("gginfrausermanager-*.gem").max_by {|f| File.mtime(f)}"
+	path "/"
+	
+end
 #end 
 
 #chocolatey "firefox" do 

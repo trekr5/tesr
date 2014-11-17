@@ -8,4 +8,4 @@ version          '0.0.0'
 
 depends "chocolatey"
 depends "http_deploy"
-
+#depends "windows"
